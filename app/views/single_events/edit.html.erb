@@ -3,7 +3,7 @@
 	<div class="panel-heading"><h2>Uredi predavanje</h2></div>
 		<div class="panel-body">
 		<div class="well well-lg">
-			<%= semantic_form_for @event do |f| %>
+			<%= semantic_form_for @event_t do |f| %>
 				<%= f.inputs do %>
 				<div id="section-details">
 					<%= f.input :start, :label => "Vrijeme početka:", :as => :time_picker, :input_html => {:class => 'form-control'}  %></br>
@@ -17,7 +17,7 @@
 					<%= f.input :odrzano, :label => "Odrzano"%></br>
 
 					<div class="form-group">
-					<%= f.input :uceniks, :label => "Popis učenika", :as => :check_boxes %>
+					<%= f.input :uceniks, :label => "Popis učenika", :as => :check_boxes, :collection => @event_t.event.uceniks %>
 
 					</div>
 					</div>

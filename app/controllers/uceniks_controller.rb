@@ -6,7 +6,7 @@ class UceniksController < ApplicationController
   def show
   	@ucenik = Ucenik.find(params[:format])
   	@page_title = @ucenik.name
-  	@ucenik_grid = initialize_grid(@ucenik.payments, include: :group ,order: 'payments.date',order_direction: 'asc') #conditions: ["single_events.odrzano = '0'"] // ako zelim ispisati samo sa ne
+  	@ucenik_grid = initialize_grid(@ucenik.payments, include: :event ,order: 'payments.date',order_direction: 'asc') #conditions: ["single_events.odrzano = '0'"] // ako zelim ispisati samo sa ne
 
   end
 

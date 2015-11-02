@@ -14,18 +14,18 @@ default: &default
   #password: VYFjqwF92
 
   ###probna baza
-  #host: sql2.freemysqlhosting.net
-  #database: sql286804
-  #username: sql286804
-  #password: aD8%eP8*
-  #port: 3306
+  host: sql2.freemysqlhosting.net
+  database: sql286804
+  username: sql286804
+  password: aD8%eP8*
+  port: 3306
 
   ###production baza
-  host: sql2.freemysqlhosting.net
-  database: sql292287
-  username: sql292287
-  password: lH1!dY1%
-  port: 3306
+  #host: sql2.freemysqlhosting.net
+  #database: sql292287
+  #username: sql292287
+  #password: lH1!dY1%
+  #port: 3306
 
   pool: 5
   timeout: 5000

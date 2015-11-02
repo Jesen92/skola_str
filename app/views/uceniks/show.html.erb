@@ -32,9 +32,9 @@ p.prikaz{
 		t.id
 	end
 
-	g.column name: "Grupa", attribute: 'name', custom_filter: :auto , model: Group do |t|
-		if t.group != nil
-		 t.group.name#link_to(t.group.name, grupa_path(t.id))
+	g.column name: "Grupa", attribute: 'title', custom_filter: :auto , model: Event do |t|
+		if t.event != nil
+		 t.event.title #link_to(t.event.title, grupa_path(t.id))
 		else
 			"Nema grupe"
 		end

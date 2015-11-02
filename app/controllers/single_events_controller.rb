@@ -149,8 +149,8 @@ end
   end
 
   def edit
-    @event = SingleEvent.find(params[:format])
-    @page_title = @event.title
+    @event_t = SingleEvent.find(params[:format])
+    @page_title = @event_t.title
 
   end
 
