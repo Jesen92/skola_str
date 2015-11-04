@@ -166,9 +166,9 @@ end
       end
 
       panel "Grupe" do
-        table_for profesor.groups do 
-          column :name do |group|
-           link_to group.name, [:admin, group]
+        table_for profesor.events do
+          column :title do |group|
+           link_to group.title, [:admin, group]
          end
         end
       end

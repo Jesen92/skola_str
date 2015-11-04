@@ -28,9 +28,11 @@ p.prikaz{
 		<li><div class="well well-sm"><p class="prikaz">Telefon:</p> <%= @user.telefon %></div><p></p></li>
 		<li><div class="well well-sm"><p class="prikaz">Obrazovanje:</p> <%= @user.obrazovanje %></div><p></p></li>
 		<li><div class="well well-sm"><p class="prikaz">Karijerska pozicija:</p> <%= @user.karijerska_pozicija %></div><p></p></li>
-		<li><div class="well well-sm"><p class="prikaz">Inozemno iskustvo:</p> <%= @user.inozemno_iskustvo %></div><p></p></li>
+		<li><div class="well well-sm"><p class="prikaz">Inozemno iskustvo:</p> <%= @user.inozemno_iskustvo? ? "Da" : "Ne" %></div><p></p></li>
+       <% if @user.datum_rodenja != nil %>
 		<li><div class="well well-sm"><p class="prikaz">Datum rođenja:</p> <%= @user.datum_rodenja.strftime(" %d.%m.%Y. ") %></div><p></p></li>
-		<li><div class="well well-sm"><p class="prikaz">Mjesto rođenja:</p> <%= @user.mjesto_rodenja %></div><p></p></li>
+		<% end %>
+          <li><div class="well well-sm"><p class="prikaz">Mjesto rođenja:</p> <%= @user.mjesto_rodenja %></div><p></p></li>
 
 
 	</ul>
