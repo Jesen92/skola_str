@@ -2440,7 +2440,7 @@ table th[class*="col-"] {
 }
 @media screen and (max-width: 767px) {
   .table-responsive {
-    width: 100%;
+    width: 150%;
     margin-bottom: 15px;
 
     border: 1px solid #ddd;
